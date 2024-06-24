@@ -1,0 +1,30 @@
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transition: 4s;
+        h1{
+            padding: 20px;
+            color: rgb(98, 2, 2);
+            transition: 4s;
+        }
+    }
+    .heightchange{
+        height: 900px;
+    }
+</style>
+<div id="box"><h1 id="text">Hi</h1></div>
+
+<button onclick="change()">chnge</button>
+<script>
+    
+    var box = document.getElementById("box")
+    var text=document.getElementById("text")
+    function change(){
+        box.style.backgroundColor="red"
+        box.setAttribute("class","heightchange")
+        text.style.color="black"
+
+    }
+</script>

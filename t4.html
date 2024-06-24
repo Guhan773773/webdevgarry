@@ -1,0 +1,31 @@
+<h1 id="H">Hi</h1>
+
+
+<button onclick="Gar(event)">Garry</button>
+<button onclick="bra(event)">Brian</button>
+<button onclick="har(event)">Harrison</button>
+
+
+<script>
+    // var gary = document.getElementById("Garry")
+    // var brian= document.getElementById("Brian")
+    // var hari = document.getElementById("Harr")
+    var h1 = document.getElementById("H")
+    function Gar(event){
+        
+        h1.textContent=h1.textContent+" "+event.target.textContent
+        
+
+
+    }
+    function bra(event){
+        h1.textContent=h1.textContent+" "+event.target.textContent
+
+
+    }
+    function har(event){
+        h1.textContent=h1.textContent+" "+event.target.textContent
+
+    }
+
+</script>

@@ -1,0 +1,62 @@
+
+<head>
+        <div class="tite">
+            <h2 class="name"> Todo list</h2>
+
+        </div>
+
+</head>
+<body>
+<div class="added">
+<input class="input"></input>
+<button onclick="add()" style="margin-left:100px;">Add</button>
+</div>
+
+<ul id="container">
+    <li>
+    Hello
+    <button onclick="deleteitem(event)"> delete</button>
+    </li>
+
+</ul>
+</div>
+<script>
+    var ul = document.getElementById("container")
+    var wrd = document.querySelector("input")
+    function add(){
+        var newlist = document.createElement("li")
+        newlist.innerHTML=wrd.value+"<button onclick='deleteitem(event)'>delete</button>"
+        ul.append(newlist)
+        
+    }
+    function deleteitem(event){
+        event.target.parentElement.remove()
+
+    }
+</script>
+<style>
+    .tite{
+        margin: 20px;
+        background-color: black;
+        color: brown ;
+        text-align: center;
+    }
+    #container{
+        color: blue ;
+    }
+    .added button{
+        color: green;
+        background-color: black;
+    }
+    .added input{
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    border-right: 90;
+    outline: none;     
+    }
+
+</style>
+
+</body>
